@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMouse Event</title>
+    <style>
+	
+	</style>
+	</head>
+<body>
+<img id="myImage" src="cat.jpg" onmouseover="changeImage('hover_image.png')" onmouseout="changeImage('default_image.png')" alt="Mouse Event Image">
+<script>
+function changeImage(imageSrc) {
+  const imageElement = document.getElementById('myImage');
+  imageElement.src = imageSrc;
+}
+
+</script>
+</body>
